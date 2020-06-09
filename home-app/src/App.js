@@ -1,6 +1,8 @@
 import React from 'react'
 
-function App() {
+import Movie from './components/Movie'
+
+const App = () => {
   return (
     <>
       <h1>Home...........</h1>
@@ -15,6 +17,8 @@ function App() {
         >
           Learn React
         </a>
+
+        <Movie />
     </>
   )
 }
