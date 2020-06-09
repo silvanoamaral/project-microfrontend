@@ -1,0 +1,13 @@
+ul {
+  list-style: none;
+
+  a {
+    color: #fff;
+    font-weight: 200;
+    text-decoration: none;
+
+    &.active {
+      border-bottom: 1px solid;
+    }
+  }
+}
