@@ -64,7 +64,7 @@ async function init() {
 
   singleSpa.registerApplication(
     'menu',
-    remoteImport(`//localhost:8080/build/app.js`),
+    remoteImport(`//localhost:8083/build/app.js`),
     () => true
   )
 
