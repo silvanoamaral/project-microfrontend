@@ -4,6 +4,7 @@ const MovieList = ({ loading, error, movies }) => {
   if (error) {
     return <div>Algo de errado não está certo</div>
   }
+
   if (loading || movies === null) {
     return <div>Carregando...</div>
   }
@@ -15,7 +16,7 @@ const MovieList = ({ loading, error, movies }) => {
   return (
     <div className="movie-list">
       {movies.items.map((movie) => (
-        <p>{movie.title}</p>
+        <p key={movie.id}>{movie.title}</p>
       ))}
     </div>
   )
